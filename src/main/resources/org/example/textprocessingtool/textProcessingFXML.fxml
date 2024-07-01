@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="textProcessing" prefHeight="367.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.textprocessingtool.TextProcessingFXML">
+   <children>
+      <Button layoutX="387.0" layoutY="275.0" mnemonicParsing="false" onAction="#highlightButton" text="highlight" />
+      <TextField fx:id="patternText" layoutX="24.0" layoutY="273.0" prefHeight="29.0" prefWidth="274.0" promptText="Enter pattern" />
+      <Text fx:id="text" layoutX="179.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text Processing Module" wrappingWidth="280.13671875">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="317.0" layoutY="275.0" mnemonicParsing="false" onAction="#searchButton" text="search" />
+      <Button layoutX="317.0" layoutY="307.0" mnemonicParsing="false" onAction="#replaceButton" text="Replace" />
+      <TextArea fx:id="inputText" layoutX="24.0" layoutY="59.0" prefHeight="200.0" prefWidth="310.0" />
+      <TextArea fx:id="resultText" layoutX="346.0" layoutY="59.0" prefHeight="200.0" prefWidth="236.0" />
+      <TextField fx:id="inputTextReplace" layoutX="24.0" layoutY="305.0" prefHeight="29.0" prefWidth="274.0" promptText="Enter Replace pattern" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

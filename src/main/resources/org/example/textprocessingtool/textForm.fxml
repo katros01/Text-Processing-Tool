@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane fx:id="container" prefHeight="217.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.textprocessingtool.textFormController">
+   <top>
+      <HBox fx:id="t" prefHeight="29.0" prefWidth="657.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="textProceButton" onMouseClicked="#openTextProcessing" strokeType="OUTSIDE" strokeWidth="0.0" text="Text Processing" wrappingWidth="82.11328125">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text fx:id="dataProceButton" layoutX="10.0" layoutY="23.0" onMouseClicked="#openDataProcessing" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Management" wrappingWidth="116.11328125">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </HBox>
+   </top>
+</BorderPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="dataProcessing" prefHeight="367.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.textprocessingtool.collectionsController">
+   <children>
+      <Text fx:id="text" layoutX="171.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Management Module" wrappingWidth="287.13671875">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="58.0" layoutY="279.0" mnemonicParsing="false" onAction="#editButton" prefHeight="25.0" prefWidth="80.0" text="Edit" />
+      <ComboBox fx:id="collectionsType" layoutX="58.0" layoutY="73.0" onAction="#collectionsTypeChanged" prefHeight="25.0" prefWidth="177.0" />
+      <ComboBox fx:id="allcreatedCollections" layoutX="247.0" layoutY="73.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextArea fx:id="resultText" layoutX="58.0" layoutY="112.0" prefHeight="156.0" prefWidth="485.0" />
+      <Button layoutX="147.0" layoutY="279.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="25.0" prefWidth="80.0" text="delete" />
+      <Button layoutX="235.0" layoutY="279.0" mnemonicParsing="false" onAction="#clearCollectionButton" prefHeight="25.0" prefWidth="80.0" text="clear" />
+      <Button layoutX="247.0" layoutY="317.0" mnemonicParsing="false" onAction="#addItem" prefHeight="25.0" prefWidth="73.0" text="Add" />
+      <TextField fx:id="newItem" layoutX="59.0" layoutY="317.0" prefHeight="25.0" prefWidth="177.0" />
+      <ComboBox fx:id="collections" layoutX="336.0" layoutY="317.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="collectionName" layoutX="336.0" layoutY="279.0" prefHeight="25.0" prefWidth="177.0" />
+      <Button layoutX="526.0" layoutY="292.0" mnemonicParsing="false" onAction="#createCollection" prefHeight="25.0" prefWidth="80.0" text="Create" />
+      <Button layoutX="463.0" layoutY="73.0" mnemonicParsing="false" onAction="#displayItems" prefHeight="25.0" prefWidth="80.0" text="search" />
+   </children>
+</AnchorPane>
